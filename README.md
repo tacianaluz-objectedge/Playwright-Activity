@@ -1,4 +1,4 @@
-# 🎭 E2E Web Automation with Playwright and PO Manager
+# 🎭 E2E Web Automation with Playwright and Allure Report
 
 This repository contains a hands-on End-to-End (E2E) test automation project using **Playwright** and **TypeScript**. The main focus of this architecture is the implementation of the **Page Object Manager (PO Manager)** design pattern, ensuring clean, scalable, and easily maintainable tests, along with rich visual test reporting using **Allure Report**.
 
@@ -33,4 +33,4 @@ The project follows the **Page Object Model (POM)** structure managed by a centr
  ┣ 📜 playwright.config.ts     # Global Playwright configuration (reporters, retries, browsers)
  ┣ 📜 package.json             # Project metadata and NPM dependencies
  ┗ 📜 README.md                # Project documentationcom/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
-   cd SEU_REPOSITORIO
+  
