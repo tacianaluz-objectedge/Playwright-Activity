@@ -1,0 +1,25 @@
+{
+  "name": "playwright-activity",
+  "version": "1.0.0",
+  "description": "This repository contains a hands-on End-to-End (E2E) test automation project using **Playwright** and **TypeScript**. The main focus of this architecture is the implementation of the **Page Object Manager (PO Manager)** design pattern, ensuring clean, scalable, and easily maintainable tests, along with rich visual test reporting using **Allure Report**.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tacianaluz-objectedge/Playwright-Activity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tacianaluz-objectedge/Playwright-Activity/issues"
+  },
+  "homepage": "https://github.com/tacianaluz-objectedge/Playwright-Activity#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "allure-commandline": "^2.38.1",
+    "allure-playwright": "^3.6.0"
+  }
+}
