@@ -23,14 +23,14 @@ The project follows the **Page Object Model (POM)** structure managed by a centr
 📦 playwright-pom-allure
  ┣ 📂 .github
  ┃ ┗ 📂 workflows
- ┃   ┗ 📜 playwright.yml       # CI/CD pipeline configuration for GitHub Actions
+ ┃   ┗ 📜 playwright.yml       CI/CD pipeline 
  ┣ 📂 pages
- ┃ ┣ 📜 EstoquePage.ts         # Locators and actions for the Inventory/Products page
- ┃ ┣ 📜 LoginPage.ts           # Locators and actions for the Login page
- ┃ ┗ 📜 POManager.ts           # Orchestrator class centralizing page instantiation
+ ┃ ┣ 📜 EstoquePage.ts         Locators and actions for the Inventory/Products page
+ ┃ ┣ 📜 LoginPage.ts           Locators and actions for the Login page
+ ┃ ┗ 📜 POManager.ts           Orchestrator class centralizing page instantiation
  ┣ 📂 tests
- ┃ ┗ 📜 compras.spec.ts        # Real test scenarios consuming the PO Manager
- ┣ 📜 playwright.config.ts     # Global Playwright configuration (reporters, retries, browsers)
- ┣ 📜 package.json             # Project metadata and NPM dependencies
- ┗ 📜 README.md                # Project documentationcom/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
+ ┃ ┗ 📜 compras.spec.ts        Real test scenarios consuming the PO Manager
+ ┣ 📜 playwright.config.ts     Global Playwright configuration (reporters, retries, browsers)
+ ┣ 📜 package.json             Project metadata and NPM dependencies
+ ┗ 📜 README.md                Project documentationcom (https://github.com/tacianaluz-objectedge/Playwright-Activity)
   
