@@ -1,4 +1,4 @@
-# 🎭 E2E Web Automation with Playwright and PO Manager
+# 🎭 E2E Web Automation with Playwright
 
 This repository contains a hands-on End-to-End (E2E) test automation project using **Playwright** and **JavaScript**. The main focus of this architecture is the implementation of the **Page Object Manager (PO Manager)** design pattern, ensuring clean, scalable, and easily maintainable tests, along with rich visual test reporting using **Allure Report**.
 
