@@ -1,48 +1,36 @@
-# 🎭 Automação Web E2E com Playwright e PO Manager
+# 🎭 E2E Web Automation with Playwright and PO Manager
 
-Este repositório contém um projeto *hands-on* de automação de testes End-to-End (E2E) utilizando **Playwright** e **TypeScript**. O foco principal desta arquitetura é a implementação do padrão de projeto **Page Object Manager (PO Manager)**, garantindo testes limpos, escaláveis e de fácil manutenção, além da geração de relatórios visuais ricos com o **Allure Report**.
+This repository contains a hands-on End-to-End (E2E) test automation project using **Playwright** and **TypeScript**. The main focus of this architecture is the implementation of the **Page Object Manager (PO Manager)** design pattern, ensuring clean, scalable, and easily maintainable tests, along with rich visual test reporting using **Allure Report**.
 
-O site utilizado como alvo dos testes é o e-commerce fictício [SauceDemo (Swag Labs)](https://www.saucedemo.com/).
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-* **[Playwright](https://playwright.dev/):** Framework de automação de testes E2E.
-* **[TypeScript](https://www.typescriptlang.org/):** Superset do JavaScript que adiciona tipagem estática.
-* **[Allure Report](https://allurereport.org/):** Ferramenta para geração de relatórios de testes detalhados e interativos.
-* **[GitHub Actions](https://docs.github.com/en/actions):** Plataforma de CI/CD para execução contínua dos testes.
+The target site used for these tests is the fictional e-commerce [SauceDemo (Swag Labs)](https://www.saucedemo.com/).
 
 ---
 
-## 📂 Arquitetura do Projeto
+## 🛠️ Technologies Used
 
-O projeto segue a estrutura baseada em **Page Object Model (POM)** gerenciada por um **Manager**:
-
-* **`pages/`**: Contém as classes que representam as páginas do sistema.
-    * `LoginPage.ts`: Mapeamento e ações da tela de login.
-    * `EstoquePage.ts`: Mapeamento e ações da tela de listagem de produtos.
-    * `POManager.ts`: Classe orquestradora que centraliza a instânciação de todas as páginas, facilitando a chamada nos testes.
-* **`tests/`**: Contém os arquivos de especificação (specs).
-    * `compras.spec.ts`: Cenários de testes reais consumindo o PO Manager.
-* **`.github/workflows/`**: Contém o arquivo `.yml` responsável pela esteira de CI/CD no GitHub.
-* **`playwright.config.ts`**: Arquivo de configuração global do Playwright (reporters, retries, browsers).
+* **[Playwright](https://playwright.dev/):** Fast and reliable E2E test automation framework.
+* **[TypeScript](https://www.typescriptlang.org/):** JavaScript superset that adds static typing.
+* **[Allure Report](https://allurereport.org/):** Tool for generating detailed, interactive, and visual test reports.
+* **[GitHub Actions](https://docs.github.com/en/actions):** CI/CD platform for continuous test execution.
 
 ---
 
-## ⚙️ Pré-requisitos
+## 📂 Project Architecture
 
-Antes de começar, você precisará ter instalado em sua máquina:
-* [Node.js](https://nodejs.org/) (versão LTS recomendada)
-* [Git](https://git-scm.com/)
+The project follows the **Page Object Model (POM)** structure managed by a central **PO Manager**. Here is how the directories are organized:
 
----
-
-## 🚀 Instalação e Configuração
-
-Siga os passos abaixo para rodar o projeto localmente:
-
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
+```text
+📦 playwright-pom-allure
+ ┣ 📂 .github
+ ┃ ┗ 📂 workflows
+ ┃   ┗ 📜 playwright.yml       # CI/CD pipeline configuration for GitHub Actions
+ ┣ 📂 pages
+ ┃ ┣ 📜 EstoquePage.ts         # Locators and actions for the Inventory/Products page
+ ┃ ┣ 📜 LoginPage.ts           # Locators and actions for the Login page
+ ┃ ┗ 📜 POManager.ts           # Orchestrator class centralizing page instantiation
+ ┣ 📂 tests
+ ┃ ┗ 📜 compras.spec.ts        # Real test scenarios consuming the PO Manager
+ ┣ 📜 playwright.config.ts     # Global Playwright configuration (reporters, retries, browsers)
+ ┣ 📜 package.json             # Project metadata and NPM dependencies
+ ┗ 📜 README.md                # Project documentationcom/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
    cd SEU_REPOSITORIO
